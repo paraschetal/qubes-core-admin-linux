@@ -1,4 +1,4 @@
-CFLAGS=-g -O2 -Wall -Wextra -Werror -I. -fPIC
+CFLAGS+=-g -O2 -Wall -Wextra -Werror -I. -fPIC
 all:    qfile-dom0-agent 
 qfile-dom0-agent: qfile-dom0-agent.o
 	$(CC) -pie -g -o $@ $^ -lqubes-rpc-filecopy
